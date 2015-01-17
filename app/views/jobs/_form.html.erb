@@ -12,6 +12,7 @@
       <%= f.input :contact_url, as: :url %>
       <%= f.input :skills %>
       <%= f.input :description %>
+      <%= f.input :salary, as: :radio_buttons, collection: salaries_hash %>
 
       <!--
       <%= f.label :description %>
