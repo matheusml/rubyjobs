@@ -17,4 +17,7 @@ module JobsHelper
     {'Presencial' => :presencial, 'Remoto' => :remote, 'Freela' => :freela, 'Trainee' => :trainee}
   end
 
+  def contact_by_hash
+    { 'E-mail' => :email, 'Endereço web' => :url }
+  end
 end
