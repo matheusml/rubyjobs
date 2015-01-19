@@ -14,6 +14,8 @@ describe Job do
       it { expect(subject).not_to allow_value('m@e.com').for(:email) }
       it { expect(subject).to allow_value('http://www.site.com').for(:website) }
       it { expect(subject).not_to allow_value('site.com').for(:website) }
+      it { expect(subject).to allow_value('http://www.site.com').for(:endereco_vaga) }
+      it { expect(subject).not_to allow_value('site.com').for(:endereco_vaga) }
     end
   end
 
