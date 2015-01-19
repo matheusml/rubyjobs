@@ -52,6 +52,7 @@ class JobsController < ApplicationController
     params.require(:job).permit(
       :title,
       :email,
+      :endereco_vaga,
       :company,
       :skills,
       :location,
