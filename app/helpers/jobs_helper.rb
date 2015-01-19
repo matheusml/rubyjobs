@@ -16,8 +16,12 @@ module JobsHelper
     {'Presencial' => :presencial, 'Remoto' => :remote, 'Freela' => :freela, 'Trainee' => :trainee}
   end
 
+  def contact_by_hash
+    { 'E-mail' => :email, 'Endereço web' => :url }
+  end
+
   def salaries_hash
-    {'N/A' => :undefined, 'Abaixo de R$3.000' => :intern, 'R$3.000 - R$6.000' => :junior, 
+    {'N/A' => :undefined, 'Abaixo de R$3.000' => :intern, 'R$3.000 - R$6.000' => :junior,
       'R$6.000 - R$9.000' => :medium, 'Acima de R$9.000' => :senior }
   end
 end

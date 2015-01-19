@@ -58,6 +58,8 @@ class JobsController < ApplicationController
       :description,
       :modality,
       :website,
-      :salary)
+      :salary,
+      :contact_by,
+      :contact_url)
   end
 end

@@ -25,6 +25,8 @@ ActiveRecord::Schema.define(version: 20150117175540) do
     t.string   "slug"
     t.integer  "modality",    default: 0
     t.string   "website"
+    t.integer  "contact_by",  default: 0
+    t.string   "contact_url"
     t.integer  "salary",      default: 0
   end
 
